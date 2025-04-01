@@ -57,34 +57,17 @@
                 </div>
             </div>
 
+            {% for tarefa in tarefas %}
             <div class="row item">
                 <div class="col-sm-10">
-                    <span>Lavar as Louças</span>
+                    <span>{{tarefa.titulo}}</span>
                 </div>
                 <div class="col-sm-2 icones">
                     <a href=""><span><i class="fa fa-edit"></i></span></a>
                     <a href=""><span><i class="fa fa-trash"></i></span></a>
                 </div>
             </div>
-            <div class="row item">
-                <div class="col-sm-10">
-                    <span>Responder as Pessoas</span>
-                </div>
-                <div class="col-sm-2 icones">
-                    <a href=""><span><i class="fa fa-edit"></i></span></a>
-                    <a href=""><span><i class="fa fa-trash"></i></span></a>
-                </div>
-            </div>
-            <div class="row item">
-                <div class="col-sm-10">
-                    <span>Correr</span>
-                </div>
-                <div class="col-sm-2 icones">
-                    <a href=""><span><i class="fa fa-edit"></i></span></a>
-                    <a href=""><span><i class="fa fa-trash"></i></span></a>
-                </div>
-            </div>
-
+            {% endfor %}
         </div>
 
     </main>
