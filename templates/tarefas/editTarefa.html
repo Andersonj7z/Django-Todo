@@ -1,16 +1,16 @@
 {% extends 'base.html' %}
 {% load crispy_forms_tags %}
 
-{% block title %} Adicione uma tarefa{% endblock%}
+{% block title %} Editando a tarefa{% endblock%}
 
 {% block content %}
 <div class="list-div">
-    <h1>adicione sua nova tarefa:</h1>
+    <h1>Editando a tarefa '{{tarefa.tiulo}}'</h1>
     <form method="POST">
         {% csrf_token %}
         {{ form|crispy }}
 
-        <input type="submit" class="btn btn-success" value="Criar Tarefa">
+        <input type="submit" class="btn btn-success" value="Editar Tarefa">
     </form>
 
 </div>
